@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="334dp"
+        android:layout_height="304dp"
+        android:background="@drawable/img16"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <EditText
+            android:hint="\t Логин"
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:hint="\t Имя пользователя"
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="match_parent"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:hint="\t Адрес электронной почты"
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:hint="\t Пароль"
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:hint="\t Повторите пароль"
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="68.5dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back"
+        android:onClick="getBack"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.09"
+        android:lineSpacingExtra="18sp"
+        android:text="Регистрация"
+        android:textColor="#979797"
+        android:textSize="39.5sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="320dp"
+        android:layout_height="65.5dp"
+        android:background="@drawable/create18"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="13.5sp"
+        android:text="Создать аккаунт"
+        android:textColor="#1778f2"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

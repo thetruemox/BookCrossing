@@ -8,6 +8,29 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:layout_width="266.5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/f15"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:letterSpacing="0.05"
+            android:onClick="newAccount"
+            android:text="Еще нет аккаунта"
+            android:textColor="#1778f2"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="334dp"
         android:layout_height="131.5dp"
@@ -70,4 +93,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/birds" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="266.5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/f15"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="20sp"
+            android:textColor="#1778f2"
+            android:letterSpacing="0.05"
+            android:text="Войти"
+            />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
