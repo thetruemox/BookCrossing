@@ -110,11 +110,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:textSize="20sp"
-            android:textColor="#1778f2"
             android:letterSpacing="0.05"
+            android:onClick="enterMain"
             android:text="Войти"
-            />
+            android:textColor="#1778f2"
+            android:textSize="20sp" />
     </LinearLayout>
 
 

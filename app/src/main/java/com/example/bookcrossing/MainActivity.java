@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     public void newAccount(View view) {
         setContentView(R.layout.registration_screen);
     }
-    public void getBack(View view) {
-        setContentView(R.layout.authorization_screen);
-    }
+    public void getBack(View view) { setContentView(R.layout.authorization_screen); }
+    public void createAccount(View view) {setContentView(R.layout.authorization_screen); }
+    public void enterMain(View view) { setContentView(R.layout.main_screen); }
+
 }
