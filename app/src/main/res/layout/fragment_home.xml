@@ -6,110 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <LinearLayout
-        android:layout_width="310dp"
-        android:layout_height="530dp"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/justName"
+        <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:layout_weight="1.0"
-            android:gravity="center_horizontal"
-            android:letterSpacing="0.08"
-            android:lineSpacingExtra="10sp"
-            android:text="Название"
-            android:textColor="#707070"
-            android:textSize="22.5sp"
-            android:textStyle="normal" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/findBook"
-            android:layout_width="match_parent"
-            android:layout_height="51.5dp"
-            android:layout_marginBottom="23dp"
-            android:layout_weight="1.0"
-            android:background="@drawable/f15"
-            android:gravity="center_horizontal"
-            android:letterSpacing="0.08"
-            android:lineSpacingExtra="10sp"
-            android:paddingTop="16dp"
-            android:src="@drawable/log_pas_fig"
-            android:text="Найти книгу"
-            android:textColor="#707070"
-            android:textSize="22.5sp"
-            android:textStyle="normal" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/book_shelf" />
 
-        <Button
-            android:id="@+id/findShelf"
-            android:layout_width="match_parent"
-            android:layout_height="51.5dp"
-            android:layout_marginBottom="23dp"
-            android:layout_weight="1.0"
-            android:background="@drawable/f15"
-            android:gravity="center_horizontal"
-            android:letterSpacing="0.08"
-            android:lineSpacingExtra="10sp"
-            android:paddingTop="16dp"
-            android:text="Поиск полок"
-            android:textColor="#707070"
-            android:textSize="22.5sp"
-            android:textStyle="normal" />
+            <Button
+                android:id="@+id/findBook"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:letterSpacing="0.04"
 
-        <Button
-            android:id="@+id/addBook"
-            android:layout_width="match_parent"
-            android:layout_height="51.5dp"
-            android:layout_marginBottom="23dp"
-            android:layout_weight="1.0"
-            android:background="@drawable/f15"
-            android:gravity="center_horizontal"
-            android:letterSpacing="0.08"
-            android:lineSpacingExtra="10sp"
-            android:paddingTop="16dp"
-            android:text="Добавить книгу"
-            android:textColor="#707070"
-            android:textSize="22.5sp"
-            android:textStyle="normal" />
+                android:lineSpacingExtra="6.5sp"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:text="Найти книгу" />
 
-        <Button
-            android:id="@+id/lostBook"
-            android:layout_width="match_parent"
-            android:layout_height="51.5dp"
-            android:layout_marginBottom="23dp"
-            android:layout_weight="1.0"
-            android:background="@drawable/f15"
-            android:gravity="center_horizontal"
-            android:letterSpacing="0.08"
-            android:lineSpacingExtra="10sp"
-            android:paddingTop="16dp"
-            android:text="Отпустить книгу"
-            android:textColor="#707070"
-            android:textSize="22.5sp"
-            android:textStyle="normal" />
+            <Button
+                android:id="@+id/findShelf"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:letterSpacing="0.04"
 
-        <Button
-            android:id="@+id/myBooks"
-            android:layout_width="match_parent"
-            android:layout_height="51.5dp"
-            android:layout_marginBottom="23dp"
-            android:layout_weight="1.0"
-            android:background="@drawable/f15"
-            android:gravity="center_horizontal"
-            android:letterSpacing="0.08"
-            android:lineSpacingExtra="10sp"
-            android:paddingTop="16dp"
-            android:text="Мои книги"
-            android:textColor="#707070"
-            android:textSize="22.5sp"
-            android:textStyle="normal" />
-    </LinearLayout>
+                android:lineSpacingExtra="6.5sp"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:text="Поиск полок" />
+
+            <Button
+                android:id="@+id/addBook"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+
+                android:lineSpacingExtra="6.5sp"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:text="Добавить книгу" />
+
+            <Button
+                android:id="@+id/lostBook"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+
+                android:lineSpacingExtra="6.5sp"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:text="Отпустить книгу" />
+
+            <Button
+                android:id="@+id/myBooks"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+
+                android:lineSpacingExtra="6.5sp"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:text="Мои книги" />
+
+            <Button
+                android:id="@+id/frQuest"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+
+                android:lineSpacingExtra="6.5sp"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:text="Частые вопросы" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
