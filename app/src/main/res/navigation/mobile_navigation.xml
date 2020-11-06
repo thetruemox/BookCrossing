@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.bookcrossing.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Главная"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.bookcrossing.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="Профиль"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_my_books"
         android:name="com.example.bookcrossing.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:label="Мои книги"
+        tools:layout="@layout/fragment_mybooks" />
 </navigation>
