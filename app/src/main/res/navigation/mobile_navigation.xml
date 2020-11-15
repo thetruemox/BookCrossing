@@ -15,7 +15,7 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.bookcrossing.ui.gallery.GalleryFragment"
         android:label="Профиль"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/nav_my_books"
