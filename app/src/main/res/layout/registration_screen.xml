@@ -10,16 +10,15 @@
         android:id="@+id/linearLayout3"
         android:layout_width="311.5dp"
         android:layout_height="353dp"
+        android:layout_marginTop="124dp"
         android:background="@drawable/d16"
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58">
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/editTextTextEmailAddress2"
@@ -110,16 +109,29 @@
         android:id="@+id/button5"
         android:layout_width="253dp"
         android:layout_height="54.5dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/blue_button"
         android:letterSpacing="0.08"
         android:lineSpacingExtra="13.5sp"
         android:onClick="createAccount"
-        android:text="Создать аккаунт"
 
+        android:text="Создать аккаунт"
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пароли не совпадают!"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
